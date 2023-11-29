@@ -24,12 +24,7 @@ def calculate_f1_score(y_true, y_pred):
 # Define selected features
 selected_features = [
     'frame.time_epoch', 'frame.len', 'radiotap.channel.freq', 'radiotap.datarate',
-    'radiotap.dbm_antsignal', 'wlan.fc.type', 'wlan.fc.subtype', 'wlan.fc.protected',
-    'wlan.fc.retry', 'wlan.duration', 'wlan.bssid', 'wlan.sa', 'wlan.da',
-    'wlan.seq', 'wlan.fixed.reason_code', 'wlan_radio.channel', 'wlan_radio.data_rate',
-    'wlan_radio.signal_dbm', 'wlan_radio.phy', 'wlan_radio.timestamp', 'wlan_radio.duration',
-    'eapol.type', 'eapol.len', 'eapol.keydes.key_len', 'eapol.keydes.replay_counter',
-    'ip.src', 'ip.dst', 'ip.proto', 'ip.ttl', 'tcp.ack', 'Label'
+     'wlan_radio.data_rate','wlan_radio.signal_dbm', 'wlan.sa', 'wlan.da', 'Label'
 ]
 
 # Initialize an empty DataFrame to store all data
